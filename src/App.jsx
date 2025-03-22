@@ -4,10 +4,10 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Header/>
-      <main style={{minHeight: '65vh'}}> 
-
+      <main>
+        
       </main>
       <Footer/>
     </div>
