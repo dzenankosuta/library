@@ -1,5 +1,8 @@
 import React from 'react'
 import './index.css'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Footer() {
   return (
@@ -18,9 +21,9 @@ function Footer() {
         <div className="footer-section">
           <h3>Pratite nas</h3>
           <div className="social-links">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="Instagram">📸</a>
+            <a href="https://www.facebook.com/" aria-label="Facebook" target='_blank'><FacebookIcon /></a>
+            <a href="https://x.com/" aria-label="Twitter" target='_blank'><XIcon /></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram" target='_blank'><InstagramIcon /></a>
           </div>
         </div>
       </div>
