@@ -1,0 +1,803 @@
+[
+    {
+      "id": 1,
+      "bookName": "Uliks",
+      "author": "Džejms Džojs",
+      "year": 1922,
+      "genre": "Modernistički roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 2,
+      "bookName": "Veliki Getsbi",
+      "author": "F. Skot Ficdžerald",
+      "year": 1925,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 3,
+      "bookName": "Portret umetnika u mladosti",
+      "author": "Džejms Džojs",
+      "year": 1916,
+      "genre": "Autobiografski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 4,
+      "bookName": "Lolita",
+      "author": "Vladimir Nabokov",
+      "year": 1955,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 5,
+      "bookName": "1984",
+      "author": "Džordž Orvel",
+      "year": 1949,
+      "genre": "Distopijski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 6,
+      "bookName": "Zločin i kazna",
+      "author": "Fjodor Dostojevski",
+      "year": 1866,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 7,
+      "bookName": "Ponos i predrasude",
+      "author": "Džejn Ostin",
+      "year": 1813,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 8,
+      "bookName": "Mobi Dik",
+      "author": "Herman Melvil",
+      "year": 1851,
+      "genre": "Avanturistički roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 9,
+      "bookName": "Rat i mir",
+      "author": "Lav Tolstoj",
+      "year": 1869,
+      "genre": "Istorijski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 10,
+      "bookName": "Ana Karenjina",
+      "author": "Lav Tolstoj",
+      "year": 1877,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 11,
+      "bookName": "Gospodar prstenova",
+      "author": "Dž. R. R. Tolkin",
+      "year": 1954,
+      "genre": "Fantazija",
+      "imageUrl": ""
+    },
+    {
+      "id": 12,
+      "bookName": "Hobit",
+      "author": "Dž. R. R. Tolkin",
+      "year": 1937,
+      "genre": "Fantazija",
+      "imageUrl": ""
+    },
+    {
+      "id": 13,
+      "bookName": "Lovac u žitu",
+      "author": "Dž. D. Selindžer",
+      "year": 1951,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 14,
+      "bookName": "Sto godina samoće",
+      "author": "Gabrijel Garsija Markes",
+      "year": 1967,
+      "genre": "Magijski realizam",
+      "imageUrl": ""
+    },
+    {
+      "id": 15,
+      "bookName": "Braća Karamazovi",
+      "author": "Fjodor Dostojevski",
+      "year": 1880,
+      "genre": "Filozofski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 16,
+      "bookName": "Don Kihot",
+      "author": "Migel de Servantes",
+      "year": 1605,
+      "genre": "Satira",
+      "imageUrl": ""
+    },
+    {
+      "id": 17,
+      "bookName": "Gordost i predrasuda",
+      "author": "Džejn Ostin",
+      "year": 1813,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 18,
+      "bookName": "Frankenštajn",
+      "author": "Meri Šeli",
+      "year": 1818,
+      "genre": "Horor",
+      "imageUrl": ""
+    },
+    {
+      "id": 19,
+      "bookName": "Drakula",
+      "author": "Bram Stoker",
+      "year": 1897,
+      "genre": "Horor",
+      "imageUrl": ""
+    },
+    {
+      "id": 20,
+      "bookName": "Grof Monte Kristo",
+      "author": "Aleksandar Dima",
+      "year": 1844,
+      "genre": "Avanturistički roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 21,
+      "bookName": "Velika očekivanja",
+      "author": "Čarls Dikens",
+      "year": 1861,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 22,
+      "bookName": "Oliver Tvist",
+      "author": "Čarls Dikens",
+      "year": 1838,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 23,
+      "bookName": "David Koperfild",
+      "author": "Čarls Dikens",
+      "year": 1850,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 24,
+      "bookName": "Jadnici",
+      "author": "Viktor Igo",
+      "year": 1862,
+      "genre": "Istorijski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 25,
+      "bookName": "Zov divljine",
+      "author": "Džek London",
+      "year": 1903,
+      "genre": "Avanturistički roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 26,
+      "bookName": "Beleške iz podzemlja",
+      "author": "Fjodor Dostojevski",
+      "year": 1864,
+      "genre": "Filozofski roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 27,
+      "bookName": "Gospodar muva",
+      "author": "Vilijam Golding",
+      "year": 1954,
+      "genre": "Roman",
+      "imageUrl": ""
+    },
+    {
+      "id": 28,
+      "bookName": "Alisa u zemlji čuda",
+      "author": "Luis Kerol",
+      "year": 1865,
+      "genre": "Fantazija",
+      "imageUrl": ""
+    },  
+    {
+        "id": 29,
+        "bookName": "Pustolovine Haklberi Fina",
+        "author": "Mark Tven",
+        "year": 1884,
+        "genre": "Avanturistički roman",
+       "imageUrl": ""
+      },
+      {
+        "id": 30,
+        "bookName": "Pustolovine Toma Sojera",
+        "author": "Mark Tven",
+        "year": 1876,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 31,
+        "bookName": "Prokleta avlija",
+        "author": "Ivo Andrić",
+        "year": 1954,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 32,
+        "bookName": "Na Drini ćuprija",
+        "author": "Ivo Andrić",
+        "year": 1945,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 33,
+        "bookName": "Derviš i smrt",
+        "author": "Meša Selimović",
+        "year": 1966,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 34,
+        "bookName": "Koreni",
+        "author": "Dobrica Ćosić",
+        "year": 1954,
+        "genre": "Porodični roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 35,
+        "bookName": "Stranac",
+        "author": "Albér Kami",
+        "year": 1942,
+        "genre": "Egzistencijalistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 36,
+        "bookName": "Kuga",
+        "author": "Albér Kami",
+        "year": 1947,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 37,
+        "bookName": "Proces",
+        "author": "Franc Kafka",
+        "year": 1925,
+        "genre": "Egzistencijalistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 38,
+        "bookName": "Zamak",
+        "author": "Franc Kafka",
+        "year": 1926,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 39,
+        "bookName": "Metamorfoza",
+        "author": "Franc Kafka",
+        "year": 1915,
+        "genre": "Novela",
+      "imageUrl": ""
+      },
+      {
+        "id": 40,
+        "bookName": "Ubiti pticu rugalicu",
+        "author": "Harper Li",
+        "year": 1960,
+        "genre": "Roman o odrastanju",
+      "imageUrl": ""
+      },
+      {
+        "id": 41,
+        "bookName": "Životinjska farma",
+        "author": "Džordž Orvel",
+        "year": 1945,
+        "genre": "Satira",
+      "imageUrl": ""
+      },
+      {
+        "id": 42,
+        "bookName": "Sluškinjina priča",
+        "author": "Margaret Atvud",
+        "year": 1985,
+        "genre": "Distopijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 43,
+        "bookName": "Nevidljivi čovek",
+        "author": "Rejf Elison",
+        "year": 1952,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 44,
+        "bookName": "Satnija",
+        "author": "Džozef Heler",
+        "year": 1961,
+        "genre": "Antiratni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 45,
+        "bookName": "Pijanist",
+        "author": "Vladislav Špilman",
+        "year": 1946,
+        "genre": "Memoari",
+      "imageUrl": ""
+      },
+      {
+        "id": 46,
+        "bookName": "Seobe",
+        "author": "Miloš Crnjanski",
+        "year": 1929,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 47,
+        "bookName": "Hazarski rečnik",
+        "author": "Milorad Pavić",
+        "year": 1984,
+        "genre": "Eksperimentalni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 48,
+        "bookName": "Sofijin svet",
+        "author": "Jostein Gorder",
+        "year": 1991,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 49,
+        "bookName": "Mali princ",
+        "author": "Antoan de Sent-Egziperi",
+        "year": 1943,
+        "genre": "Filozofska bajka",
+      "imageUrl": ""
+      },
+      {
+        "id": 50,
+        "bookName": "Harry Potter i kamen mudrosti",
+        "author": "Dž. K. Rouling",
+        "year": 1997,
+        "genre": "Fantazija",
+      "imageUrl": ""
+      }, 
+      {
+        "id": 51,
+        "bookName": "Gospođa Dalovej",
+        "author": "Virdžinija Vulf",
+        "year": 1925,
+        "genre": "Modernistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 52,
+        "bookName": "Doživljaji Haklberi Fina",
+        "author": "Mark Tven",
+        "year": 1884,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 53,
+        "bookName": "Doživljaji Toma Sojera",
+        "author": "Mark Tven",
+        "year": 1876,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 54,
+        "bookName": "Gospodar muva",
+        "author": "Vilijam Golding",
+        "year": 1954,
+        "genre": "Alegorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 55,
+        "bookName": "Ubiti pticu rugalicu",
+        "author": "Harper Li",
+        "year": 1960,
+        "genre": "Roman o odrastanju",
+      "imageUrl": ""
+      },
+      {
+        "id": 56,
+        "bookName": "Lovac u žitu",
+        "author": "Dž. D. Selindžer",
+        "year": 1951,
+        "genre": "Roman o odrastanju",
+      "imageUrl": ""
+      },
+      {
+        "id": 57,
+        "bookName": "Sto godina samoće",
+        "author": "Gabrijel Garsija Markes",
+        "year": 1967,
+        "genre": "Magijski realizam",
+      "imageUrl": ""
+      },
+      {
+        "id": 58,
+        "bookName": "Pustolovine Šerloka Holmsa",
+        "author": "Artur Konan Dojl",
+        "year": 1892,
+        "genre": "Detektivska fikcija",
+      "imageUrl": ""
+      },
+      {
+        "id": 59,
+        "bookName": "Portret umetnika u mladosti",
+        "author": "Džejms Džojs",
+        "year": 1916,
+        "genre": "Autobiografski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 60,
+        "bookName": "Braća Karamazovi",
+        "author": "Fjodor Dostojevski",
+        "year": 1880,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 61,
+        "bookName": "Zov divljine",
+        "author": "Džek London",
+        "year": 1903,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 62,
+        "bookName": "Frankenštajn",
+        "author": "Meri Šeli",
+        "year": 1818,
+        "genre": "Gotički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 63,
+        "bookName": "Drakula",
+        "author": "Bram Stoker",
+        "year": 1897,
+        "genre": "Gotički horor",
+      "imageUrl": ""
+      },
+      {
+        "id": 64,
+        "bookName": "Grof Monte Kristo",
+        "author": "Aleksandar Dima",
+        "year": 1844,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 65,
+        "bookName": "Velika očekivanja",
+        "author": "Čarls Dikens",
+        "year": 1861,
+        "genre": "Roman o odrastanju",
+      "imageUrl": ""
+      },
+      {
+        "id": 66,
+        "bookName": "Jadnici",
+        "author": "Viktor Igo",
+        "year": 1862,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 67,
+        "bookName": "Zločin i kazna",
+        "author": "Fjodor Dostojevski",
+        "year": 1866,
+        "genre": "Psihološki roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 68,
+        "bookName": "Ponos i predrasude",
+        "author": "Džejn Ostin",
+        "year": 1813,
+        "genre": "Ljubavni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 69,
+        "bookName": "Mobi Dik",
+        "author": "Herman Melvil",
+        "year": 1851,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 70,
+        "bookName": "Rat i mir",
+        "author": "Lav Tolstoj",
+        "year": 1869,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 71,
+        "bookName": "Ana Karenjina",
+        "author": "Lav Tolstoj",
+        "year": 1877,
+        "genre": "Ljubavni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 72,
+        "bookName": "Gospodar prstenova",
+        "author": "Dž. R. R. Tolkin",
+        "year": 1954,
+        "genre": "Epika fantastika",
+      "imageUrl": ""
+      },
+      {
+        "id": 73,
+        "bookName": "Hobit",
+        "author": "Dž. R. R. Tolkin",
+        "year": 1937,
+        "genre": "Fantazija",
+      "imageUrl": ""
+      },
+      {
+        "id": 74,
+        "bookName": "Alisa u zemlji čuda",
+        "author": "Luis Kerol",
+        "year": 1865,
+        "genre": "Fantazija",
+      "imageUrl": ""
+      },
+      {
+        "id": 75,
+        "bookName": "Pustolovine Haklberi Fina",
+        "author": "Mark Tven",
+        "year": 1884,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 76,
+        "bookName": "Pustolovine Toma Sojera",
+        "author": "Mark Tven",
+        "year": 1876,
+        "genre": "Avanturistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 77,
+        "bookName": "Gospodar muva",
+        "author": "Vilijam Golding",
+        "year": 1954,
+        "genre": "Alegorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 78,
+        "bookName": "Lolita",
+        "author": "Vladimir Nabokov",
+        "year": 1955,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 79,
+        "bookName": "Stepni vuk",
+        "author": "Herman Hese",
+        "year": 1927,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 80,
+        "bookName": "Ispod vulkana",
+        "author": "Malkolm Louri",
+        "year": 1947,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 81,
+        "bookName": "Zamak",
+        "author": "Franc Kafka",
+        "year": 1926,
+        "genre": "Egzistencijalni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 82,
+        "bookName": "Proces",
+        "author": "Franc Kafka",
+        "year": 1925,
+        "genre": "Egzistencijalni roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 83,
+        "bookName": "Svet po Garpu",
+        "author": "Džon Irving",
+        "year": 1978,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 84,
+        "bookName": "Ime ruže",
+        "author": "Umberto Eko",
+        "year": 1980,
+        "genre": "Istorijski misterijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 85,
+        "bookName": "Zemlja senki",
+        "author": "Piter Straub",
+        "year": 1980,
+        "genre": "Horor",
+      "imageUrl": ""
+      },
+      {
+        "id": 86,
+        "bookName": "Paklena pomorandža",
+        "author": "Entoni Bardžis",
+        "year": 1962,
+        "genre": "Distopijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 87,
+        "bookName": "Devet priča",
+        "author": "Dž. D. Selindžer",
+        "year": 1953,
+        "genre": "Zbirka priča",
+      "imageUrl": ""
+      },
+      {
+        "id": 88,
+        "bookName": "Sofijin svet",
+        "author": "Jostein Gorder",
+        "year": 1991,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 89,
+        "bookName": "Zli dusi",
+        "author": "Fjodor Dostojevski",
+        "year": 1872,
+        "genre": "Politički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 90,
+        "bookName": "Nečista krv",
+        "author": "Borisav Stanković",
+        "year": 1910,
+        "genre": "Realistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 91,
+        "bookName": "Seobe",
+        "author": "Miloš Crnjanski",
+        "year": 1929,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 92,
+        "bookName": "Prokleta avlija",
+        "author": "Ivo Andrić",
+        "year": 1954,
+        "genre": "Roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 93,
+        "bookName": "Na Drini ćuprija",
+        "author": "Ivo Andrić",
+        "year": 1945,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 94,
+        "bookName": "Travnička hronika",
+        "author": "Ivo Andrić",
+        "year": 1945,
+        "genre": "Istorijski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 95,
+        "bookName": "Derviš i smrt",
+        "author": "Meša Selimović",
+        "year": 1966,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 96,
+        "bookName": "Tvrđava",
+        "author": "Meša Selimović",
+        "year": 1970,
+        "genre": "Filozofski roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 97,
+        "bookName": "Žitije i priključenija",
+        "author": "Dositej Obradović",
+        "year": 1783,
+        "genre": "Autobiografija",
+      "imageUrl": ""
+      },
+      {
+        "id": 98,
+        "bookName": "Hazarski rečnik",
+        "author": "Milorad Pavić",
+        "year": 1984,
+        "genre": "Postmodernistički roman",
+      "imageUrl": ""
+      },
+      {
+        "id": 99,
+        "bookName": "Dnevnik Ane Frank",
+        "author": "Ana Frank",
+        "year": 1947,
+        "genre": "Memoari",
+      "imageUrl": ""
+      },
+      {
+        "id": 100,
+        "bookName": "Život je drugde",
+        "author": "Milan Kundera",
+        "year": 1973,
+        "genre": "Roman",
+      "imageUrl": ""
+      }
+    ]
+    
