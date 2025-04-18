@@ -18,16 +18,16 @@ function BookCard({bookName, author, year, genre, onEdit, onDelete}) {
         image="https://pngimg.com/uploads/book/book_PNG2111.png"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: 'bold' }}>
           {bookName}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: 'text.secondary', fontStyle: 'italic' }}>
         {author}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 'medium' }}>
         {year}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: 'text.secondary', fontWeight: 'medium' }}>
         {genre}
         </Typography>
       </CardContent>
