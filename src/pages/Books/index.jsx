@@ -11,6 +11,7 @@ function Books() {
   const handleDeleteBook = () => {
     console.log("Brisanje knjige")
   }
+
   return (
     <div>
       <div className='grid-container'>
@@ -25,6 +26,7 @@ function Books() {
               genre={book.genre}
               onEdit={() => handleEditBook()}
               onDelete={() => handleDeleteBook()}
+              imageClassName="book-image"
               />)
           })
         }
