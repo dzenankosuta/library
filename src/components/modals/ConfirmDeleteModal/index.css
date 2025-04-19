@@ -1,0 +1,12 @@
+.delete-modal {
+  min-width: 400px;
+}
+
+.delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px 24px;
+  gap: 16px;
+  width: 100%;
+  margin-top: 8px;
+}
