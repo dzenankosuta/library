@@ -4,11 +4,15 @@ import ConfirmDeleteModal from '../../components/modals/ConfirmDeleteModal'
 import "./index.css"
 import booksJSON from "../../common/books.json"
 import EditModal from '../../components/modals/editModal'
+import AddBookModal from '../../components/modals/addBookModal'
+import { Button } from '@mui/material'
+import AddIcon from '@mui/icons-material/Add'
 
 function Books() {
   const [books, setBooks] = useState(booksJSON)
   const [deleteModalOpen, setDeleteModalOpen] = useState(false)
   const [editModalOpen, setEditModalOpen] = useState(false)
+  const [addModalOpen, setAddModalOpen] = useState(false)
   const [selectedBook, setSelectedBook] = useState(null)
 
   const handleEditBook = (book) => {
@@ -30,12 +34,30 @@ function Books() {
     }
   }
 
-  const handleEditConfirm = () => {
+  const handleEditConfirm = (updatedBook) => {
     if (selectedBook) {
-      // dodati logiku za editovanje knjige
+      const updatedBooks = books.map((book) => 
+        book.id === selectedBook.id ? { ...book, ...updatedBook } : book
+      )
+      setBooks(updatedBooks)
       setEditModalOpen(false)
       setSelectedBook(null)
     }
+  }
+
+  const handleAddBook = () => {
+    setAddModalOpen(true)
+  }
+
+  const handleAddConfirm = (newBook) => {
+    // Add new book with unique ID
+    const newId = Math.max(...books.map(book => book.id), 0) + 1
+    const bookToAdd = {
+      id: newId,
+      ...newBook
+    }
+    setBooks([...books, bookToAdd])
+    setAddModalOpen(false)
   }
 
   const handleDeleteCancel = () => {
@@ -48,8 +70,24 @@ function Books() {
     setSelectedBook(null)
   }
 
+  const handleAddCancel = () => {
+    setAddModalOpen(false)
+  }
+
   return (
-    <div>
+    <div className="books-container">
+      <div className="books-header">
+        <h1>Biblioteka</h1>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          startIcon={<AddIcon />}
+          onClick={handleAddBook}
+        >
+          Dodaj knjigu
+        </Button>
+      </div>
+
       <div>
         {books.length === 0 ? (
           <div className="empty-books-container">
@@ -86,6 +124,11 @@ function Books() {
         onClose={handleEditCancel}
         onConfirm={handleEditConfirm}
         book={selectedBook}
+      />
+      <AddBookModal
+        open={addModalOpen}
+        onClose={handleAddCancel}
+        onConfirm={handleAddConfirm}
       />
     </div>
   )
