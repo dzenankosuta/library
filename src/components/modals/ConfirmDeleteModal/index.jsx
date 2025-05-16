@@ -12,17 +12,16 @@ function ConfirmDeleteModal({ open, onClose, onConfirm, bookName }) {
     <Dialog
       open={open}
       onClose={onClose}
-      aria-labelledby="alert-dialog-title"
-      aria-describedby="alert-dialog-description"
+      aria-labelledby="delete-dialog-title"
       PaperProps={{
         className: 'delete-modal'
       }}
     >
-      <DialogTitle id="alert-dialog-title">
+      <DialogTitle id="delete-dialog-title" sx={{ fontSize: 24, fontWeight: 'bold' }}>
         Potvrda brisanja
       </DialogTitle>
       <DialogContent>
-        <DialogContentText id="alert-dialog-description">
+        <DialogContentText id="delete-dialog-description" sx={{ fontSize: 16, mt: 1 }}>
           Da li ste sigurni da želite da obrišete knjigu "{bookName}"?
         </DialogContentText>
       </DialogContent>
