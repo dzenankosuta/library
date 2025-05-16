@@ -1,45 +1,108 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import './index.css';
 
 function EditModal({ open, onClose, onConfirm, book }) {
+  const [formData, setFormData] = useState({
+    bookName: '',
+    author: '',
+    year: '',
+    genre: '',
+  });
+
+  useEffect(() => {
+    if (book) {
+      setFormData({
+        bookName: book.bookName || '',
+        author: book.author || '',
+        year: book.year || '',
+        genre: book.genre || '',
+      });
+    }
+  }, [book]);
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = () => {
+    onConfirm(formData);
+  };
+
   return (
     <Dialog
       open={open}
       onClose={onClose}
-      aria-labelledby="alert-dialog-title"
-      aria-describedby="alert-dialog-description"
+      aria-labelledby="edit-dialog-title"
       PaperProps={{
         className: 'edit-modal'
       }}
     >
-      <DialogTitle id="alert-dialog-title" fontSize={30}>
+      <DialogTitle id="edit-dialog-title" sx={{ fontSize: 24, fontWeight: 'bold' }}>
         Izmena knjige
       </DialogTitle>
-      <DialogContent>
-        <DialogContentText id="alert-dialog-description" fontSize={18}>
-          Nakon izmena knjige "{book?.bookName}" sačuvati promene.
-        </DialogContentText>
+      <DialogContent sx={{ width: '100%' }}>
+        <Box
+          component="form"
+          sx={{ 
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 2,
+            width: '100%',
+            mt: 2,
+            px: 1
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField 
+            id="bookName" 
+            label="Naziv knjige" 
+            variant="outlined" 
+            value={formData.bookName}
+            onChange={handleChange}
+            fullWidth
+            size="medium"
+          />
+          <TextField 
+            id="author" 
+            label="Autor" 
+            variant="outlined" 
+            value={formData.author}
+            onChange={handleChange}
+            fullWidth
+            size="medium"
+          />
+          <TextField 
+            id="year" 
+            label="Godina izdanja" 
+            variant="outlined" 
+            value={formData.year}
+            onChange={handleChange}
+            fullWidth
+            size="medium"
+          />
+          <TextField 
+            id="genre" 
+            label="Žanr" 
+            variant="outlined" 
+            value={formData.genre}
+            onChange={handleChange}
+            fullWidth
+            size="medium"
+          />
+        </Box>
       </DialogContent>
-
-      <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1.5, ml: 10, width: '55ch' } }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="outlined-basic" label="Naziv knjige" variant="outlined" defaultValue={book?.bookName} />
-      <TextField id="outlined-basic" label="Autor" variant="outlined" defaultValue={book?.author} />
-      <TextField id="outlined-basic" label="Godina izdanja" variant="outlined" defaultValue={book?.year} />
-      <TextField id="outlined-basic" label="Žanr" variant="outlined" defaultValue={book?.genre} />
-      </Box>
 
       <DialogActions className="edit-modal-actions">
         <Button 
@@ -49,7 +112,7 @@ function EditModal({ open, onClose, onConfirm, book }) {
           Odustani
         </Button>
         <Button 
-          onClick={onConfirm}
+          onClick={handleSubmit}
           variant="contained"
           color="primary"
           autoFocus
