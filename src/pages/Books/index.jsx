@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import BookCard from '../../components/cards/BookCard'
 import ConfirmDeleteModal from '../../components/modals/ConfirmDeleteModal'
 import "./index.css"
@@ -7,13 +7,25 @@ import EditModal from '../../components/modals/editModal'
 import AddBookModal from '../../components/modals/addBookModal'
 import { Button } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
+import { getBooks, addBook } from '../../../firebase'
 
 function Books() {
-  const [books, setBooks] = useState(booksJSON)
+  const [books, setBooks] = useState(null)
+  const [loading, setLoading] = useState(true)
   const [deleteModalOpen, setDeleteModalOpen] = useState(false)
   const [editModalOpen, setEditModalOpen] = useState(false)
   const [addModalOpen, setAddModalOpen] = useState(false)
   const [selectedBook, setSelectedBook] = useState(null)
+
+  const getBaseBooks = async () => {
+  const books = await getBooks()
+  setBooks(books)
+  setLoading(false)
+  }
+
+  useEffect(() => {
+    getBaseBooks()
+  }, [])
 
   const handleEditBook = (book) => {
     setSelectedBook(book)
@@ -50,13 +62,9 @@ function Books() {
   }
 
   const handleAddConfirm = (newBook) => {
-    // Add new book with unique ID
-    const newId = Math.max(...books.map(book => book.id), 0) + 1
-    const bookToAdd = {
-      id: newId,
-      ...newBook
-    }
-    setBooks([...books, bookToAdd])
+    addBook(newBook)
+    setLoading(true)
+    getBaseBooks()
     setAddModalOpen(false)
   }
 
@@ -74,6 +82,12 @@ function Books() {
     setAddModalOpen(false)
   }
 
+  if (loading) {
+    return (
+      <div className='books-spinner-container'><span class="loader"></span></div>
+    )
+  }
+
   return (
     <div className="books-container">
       <div className="books-header">
@@ -89,7 +103,7 @@ function Books() {
       </div>
 
       <div>
-        {books.length === 0 ? (
+        {!books ? (
           <div className="empty-books-container">
             <div className="empty-books-message">
               <p>Trenutno nema knjiga u biblioteci.</p>
