@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import BookCard from '../../components/cards/BookCard'
 import ConfirmDeleteModal from '../../components/modals/ConfirmDeleteModal'
 import "./index.css"
@@ -6,7 +6,10 @@ import EditModal from '../../components/modals/editModal'
 import AddBookModal from '../../components/modals/addBookModal'
 import { Button } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { getBooks, addBook, editBook, deleteBook } from '../../../firebase'
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 function Books() {
   const [books, setBooks] = useState(null)
@@ -15,6 +18,29 @@ function Books() {
   const [editModalOpen, setEditModalOpen] = useState(false)
   const [addModalOpen, setAddModalOpen] = useState(false)
   const [selectedBook, setSelectedBook] = useState(null)
+
+    const exportToPDF = (books) => {
+    const doc = new jsPDF({
+      unit: "pt",
+      format: "a4",
+    });
+
+    const tableColumn = ["Ime Knjige", "Autor", "Godina Izdanja", "Žanr"];
+    const tableRows = books.map(book => [
+      book.bookName,
+      book.author,
+      book.year.toString(),
+      book.genre
+    ]);
+
+    autoTable(doc, {
+      head: [tableColumn],
+      body: tableRows,
+      startY: 20,
+    });
+
+    doc.save("books.pdf");
+  };
 
   const getBaseBooks = async () => {
   const books = await getBooks()
@@ -83,7 +109,7 @@ function Books() {
 
   if (loading) {
     return (
-      <div className='books-spinner-container'><span class="loader"></span></div>
+      <div className='books-spinner-container'><span className="loader"></span></div>
     )
   }
 
@@ -91,14 +117,24 @@ function Books() {
     <div className="books-container">
       <div className="books-header">
         <h1>Biblioteka</h1>
-        <Button 
-          variant="contained" 
-          color="primary" 
-          startIcon={<AddIcon />}
-          onClick={handleAddBook}
-        >
-          Dodaj knjigu
-        </Button>
+        <div className='buttons-header'>
+          <Button 
+            variant="contained" 
+            color="primary" 
+            startIcon={<AddIcon />}
+            onClick={handleAddBook}
+          >
+            Dodaj knjigu
+          </Button>
+          {books && <Button 
+            variant="contained" 
+            color="primary" 
+            startIcon={<PictureAsPdfIcon />}
+            onClick={() => exportToPDF(books)}
+          >
+            Preuzmi knjige
+          </Button>}
+        </div>
       </div>
 
       <div>
