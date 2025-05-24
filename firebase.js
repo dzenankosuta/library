@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import { getFirestore, collection, doc, getDocs, addDoc, updateDoc, deleteDoc } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -36,3 +36,22 @@ export const addBook = async (book) => {
     }
 }
 
+export const editBook = async (bookId, updatedBook) => {
+  try {
+    const bookRef = doc(db, "books", bookId);
+    await updateDoc(bookRef, updatedBook);
+    console.log("Document updated with ID: ", bookId);
+  } catch (e) {
+    console.error("Error updating document: ", e);
+  }
+};
+
+export const deleteBook = async (bookId, deletedBook) => {
+  try {
+    const bookRef = doc(db, "books", bookId);
+    await deleteDoc(bookRef, deletedBook);
+    console.log("Document deleted with ID: ", bookId);
+  } catch (e) {
+    console.error("Error deleting document: ", e);
+  }
+};

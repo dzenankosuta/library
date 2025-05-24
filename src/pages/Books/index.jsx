@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react'
 import BookCard from '../../components/cards/BookCard'
 import ConfirmDeleteModal from '../../components/modals/ConfirmDeleteModal'
 import "./index.css"
-import booksJSON from "../../common/books.json"
 import EditModal from '../../components/modals/editModal'
 import AddBookModal from '../../components/modals/addBookModal'
 import { Button } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
-import { getBooks, addBook } from '../../../firebase'
+import { getBooks, addBook, editBook, deleteBook } from '../../../firebase'
 
 function Books() {
   const [books, setBooks] = useState(null)
@@ -37,22 +36,22 @@ function Books() {
     setDeleteModalOpen(true)
   }
 
-  const handleDeleteConfirm = () => {
+  const handleDeleteConfirm = async (deletedBook) => {
     if (selectedBook) {
-      const filteredBooks = books.filter((book) => book.id !== selectedBook.id)
-      setBooks(filteredBooks)
+      await deleteBook(selectedBook.id, deletedBook)
       setDeleteModalOpen(false)
+      setLoading(true)
+      await getBaseBooks()
       setSelectedBook(null)
     }
   }
 
-  const handleEditConfirm = (updatedBook) => {
+  const handleEditConfirm = async (updatedBook) => {
     if (selectedBook) {
-      const updatedBooks = books.map((book) => 
-        book.id === selectedBook.id ? { ...book, ...updatedBook } : book
-      )
-      setBooks(updatedBooks)
+      await editBook(selectedBook.id, updatedBook)
       setEditModalOpen(false)
+      setLoading(true)
+      await getBaseBooks()
       setSelectedBook(null)
     }
   }
@@ -61,10 +60,10 @@ function Books() {
     setAddModalOpen(true)
   }
 
-  const handleAddConfirm = (newBook) => {
-    addBook(newBook)
+  const handleAddConfirm = async (newBook) => {
+    await addBook(newBook)
     setLoading(true)
-    getBaseBooks()
+    await getBaseBooks()
     setAddModalOpen(false)
   }
 
